@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nutrallevel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<div id="loading" class="" style="display: none;">
+    <div id="spinner"></div>
+</div>
+<div id="magnify">
+    <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+    <div id="img_here"></div>
+</div>
+<header id="header" class="animated slideInDown" style="animation-delay: 1.8s; background: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 20px; padding: 4vh 4vw;">
+    <table>
+        <tbody><tr>
+            <td id="logo">Nutrallevel</td>
+            <td id="navigation">
+                <a href="Fitness.html" style="border-bottom: 2px solid transparent;">Fitness</a>
+                <a href="WeightLoss.html" style="border-bottom: 2px solid transparent;">Weight Loss</a>
+                <a href="cards.html" style="border-bottom: 2px solid transparent;">Nutrition</a>
+                <a href="index.html" style="border-bottom: 2px solid transparent;">Home</a>
+            </td>
+        </tr>
+        </tbody></table>
+</header>
+<table id="top_part">
+    <tbody><tr>
+        <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+            <h1>Your body is like an engine.. no fuel in el tanko, no burno!</h1>
+            <table>
+                <tbody><tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
+                </tr>
+                </tbody></table>
+        </td>
+        <td id="rightImage3" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+    </tr>
+    </tbody></table>
+<div id="contact">
+    <h1>Our Calculator</h1>
+    <table>
+        <tbody><tr>
+            <td>
+                <div id="inner_div">
+                    <p id="demo"></p>
+                </div>
+            </td>
+            <td>
+                <li>
+                    Weight: <input type="text" placeholder="Your Weight in Pounds" id="Weight_Kilo" required="">
+                    <br>
+                    Age: <input type="text" placeholder="Your Age" id="Age_Year" required=""><br>
+                    Height: <input type="text" placeholder="Your Height in Centimeters" id="CM" required=""><br>
+                    <button class="btn_one" onclick="myFunction()">Submit</button>
+
+                    <script>
+                        function myFunction() {
+                            var W = document.getElementById("Weight_Kilo").value;
+                            var A = document.getElementById("Age_Year").value;
+                            var H = document.getElementById("CM").value;
+                            var BMR = (10 * W) + (6.25 * H) - (5 * A) + 5;
+                            var MBMR = (BMR * .88);
+                            var WBMR = (BMR * .77);
+                            var BMR = Math.round(BMR);
+                            var MBMR = Math.round(MBMR);
+                            var WBMR = Math.round(WBMR);
+                            document.getElementById("demo").innerHTML = "Maintain weight: " + BMR + " Calories/day" + "<br>" + "Mild weight loss: " + MBMR + " Calories/day" + "<br>" + "Weight-Loss: " + WBMR + " Calories/day"}
+                    </script>
+
+                </li>
+            </td>
+        </tr>
+        </tbody></table>
+</div>
+<div id="bio">
+    <h1>Why Us?</h1>
+    <p>
+        Due to Covid-19 our website is one, that is rare, effective, and astounding. Us, as a society have failed in teaching our body to be healthy. I’m sure most us have been binge eating while watching countless episodes of anime. Our website Nutrallevel will help many struggling people across the nation.
+    </p>
+    <p>
+        We are a simple website which anyone tech-savy or not could utilize. We have no hidden fees, or monthly payments. Our website provides - healthy foods, laid back workouts, and knowledge on nutrition, all with no cost!
+    </p>
+</div>
+<div id="contact">
+    <h1>contact</h1>
+    <table>
+        <tbody><tr>
+            <td>
+                <div id="inner_div">
+                    <table id="inner_table">
+                        <tbody><tr>
+                        </tr></tbody><tbody><tr>
+                        <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-at"></i> &nbsp; miguelisstem@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-map-marker-alt"></i>
+                            <div id="address">
+                                James St. 704,<br>
+                                Hazleton,<br>
+                                United States
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="social"><i class="fab fa-facebook"></i></a>
+                            <a class="social"><i class="fab fa-twitter"></i></a>
+                            <a class="social"><i class="fab fa-instagram"></i></a>
+                            <a class="social"><i class="fab fa-dribbble"></i></a>
+                            <a class="social"><i class="fab fa-medium"></i></a>
+                        </td>
+                    </tr>
+                    </tbody></table>
+                </div>
+            </td>
+            <td>
+                <form>
+                    <input type="text" placeholder="name" required="">
+                    <input type="email" placeholder="email" required=""><br>
+                    <textarea placeholder="your message" required="" rows="5"></textarea><br>
+                    <button class="btn_one">send</button>
+                </form>
+            </td>
+        </tr>
+        </tbody></table>
+</div>
+
+<script src="index.js" type="text/javascript"></script>
+
+</body></html>
