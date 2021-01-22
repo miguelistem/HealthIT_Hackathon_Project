@@ -1,2 +1,2 @@
 # HealthIT_Hackathon_Project
-The Home page is: Index.html
+https://miguelistem.github.io/HealthIT_Hackathon_Project/index.html
